@@ -1,11 +1,12 @@
 # Managed Disk Cleanup
 ![Logo](https://i.imgur.com/RFB7RjN.png)
 
-The goal of this project is to create an experience similar to the inbox Disk Cleanup program that ships with Windows. While regular users may simply opt to use this project as a free and open-source alternative, developers can make use of it to learn about the inner workings of the EmptyVolumeCache API that has been almost unchanged since its inception in 1997.
+このプロジェクトは、Windows に同梱しているディスククリーンアップのようなプログラムの再現とユーザー体験を目的としています。オープンソースで開発、無料で利用ができます。ディスククリーンアップは1997年の公開以来、構造は殆ど変化していません。ですが、ディスククリーンアップは後に廃止をする方向になりました(Windows 11 22H2から項目が消えています)
+Managed Disk Cleanup はEmptyVolumeCache API の内部動作について学ぶために利用することができます。
 
-One of the incentives for this project's development is the opened possibility for creating scripts or programs that clean up precisely what you want, instead of having to resort to using Disk Cleanup with command line arguments.
+このプロジェクトを始めた動機の1つは、コマンドライン引数でディスククリーンアップを使用しないで、クリーンアップを行いたい物を正確にクリーンアップするスクリプトまたはプログラムの作成の可能性が開けた事です。
 
-Some of the goals for future releases:
+将来のリリースのための目標:
 
   - Introduce Restore Point cleanup (Disk Cleanup offers this in its second tab in Administrator mode)
   - Command line-only mode -- intended for better automation, with granular progress reporting
