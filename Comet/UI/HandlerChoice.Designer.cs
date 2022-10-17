@@ -59,7 +59,7 @@
             this.TclMain.Location = new System.Drawing.Point(6, 7);
             this.TclMain.Name = "TclMain";
             this.TclMain.SelectedIndex = 0;
-            this.TclMain.Size = new System.Drawing.Size(361, 379);
+            this.TclMain.Size = new System.Drawing.Size(393, 379);
             this.TclMain.TabIndex = 0;
             this.TclMain.TabStop = false;
             // 
@@ -75,7 +75,7 @@
             this.TpgHandlers.Location = new System.Drawing.Point(4, 22);
             this.TpgHandlers.Name = "TpgHandlers";
             this.TpgHandlers.Padding = new System.Windows.Forms.Padding(3);
-            this.TpgHandlers.Size = new System.Drawing.Size(353, 353);
+            this.TpgHandlers.Size = new System.Drawing.Size(385, 353);
             this.TpgHandlers.TabIndex = 0;
             this.TpgHandlers.Text = "Disk Cleanup";
             this.TpgHandlers.UseVisualStyleBackColor = true;
@@ -99,9 +99,10 @@
             this.ClnSpace});
             this.LvwHandlers.FullRowSelect = true;
             this.LvwHandlers.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            this.LvwHandlers.Location = new System.Drawing.Point(11, 70);
+            this.LvwHandlers.HideSelection = false;
+            this.LvwHandlers.Location = new System.Drawing.Point(21, 65);
             this.LvwHandlers.Name = "LvwHandlers";
-            this.LvwHandlers.Size = new System.Drawing.Size(332, 93);
+            this.LvwHandlers.Size = new System.Drawing.Size(337, 93);
             this.LvwHandlers.TabIndex = 0;
             this.LvwHandlers.UseCompatibleStateImageBehavior = false;
             this.LvwHandlers.View = System.Windows.Forms.View.Details;
@@ -126,22 +127,22 @@
             this.GbxDesc.Controls.Add(this.BtnAdvanced);
             this.GbxDesc.Controls.Add(this.BtnElevate);
             this.GbxDesc.Controls.Add(this.LblDesc);
-            this.GbxDesc.Location = new System.Drawing.Point(11, 190);
+            this.GbxDesc.Location = new System.Drawing.Point(21, 197);
             this.GbxDesc.Name = "GbxDesc";
-            this.GbxDesc.Size = new System.Drawing.Size(332, 153);
+            this.GbxDesc.Size = new System.Drawing.Size(337, 153);
             this.GbxDesc.TabIndex = 1;
             this.GbxDesc.TabStop = false;
-            this.GbxDesc.Text = "Description";
+            this.GbxDesc.Text = "説明";
             // 
             // BtnAdvanced
             // 
             this.BtnAdvanced.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnAdvanced.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.BtnAdvanced.Location = new System.Drawing.Point(231, 119);
+            this.BtnAdvanced.Location = new System.Drawing.Point(224, 119);
             this.BtnAdvanced.Name = "BtnAdvanced";
-            this.BtnAdvanced.Size = new System.Drawing.Size(90, 23);
+            this.BtnAdvanced.Size = new System.Drawing.Size(102, 23);
             this.BtnAdvanced.TabIndex = 1;
-            this.BtnAdvanced.Text = "&View Files";
+            this.BtnAdvanced.Text = "ファイルの表示(&V)";
             this.BtnAdvanced.UseVisualStyleBackColor = true;
             this.BtnAdvanced.Click += new System.EventHandler(this.BtnAdvanced_Click);
             // 
@@ -151,9 +152,9 @@
             this.BtnElevate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.BtnElevate.Location = new System.Drawing.Point(10, 119);
             this.BtnElevate.Name = "BtnElevate";
-            this.BtnElevate.Size = new System.Drawing.Size(138, 23);
+            this.BtnElevate.Size = new System.Drawing.Size(204, 23);
             this.BtnElevate.TabIndex = 0;
-            this.BtnElevate.Text = "Clean up &system files";
+            this.BtnElevate.Text = "システム ファイルのクリーンアップ(&S)";
             this.BtnElevate.UseVisualStyleBackColor = true;
             this.BtnElevate.Click += new System.EventHandler(this.BtnElevate_Click);
             // 
@@ -161,15 +162,15 @@
             // 
             this.LblDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblDesc.Location = new System.Drawing.Point(6, 20);
+            this.LblDesc.Location = new System.Drawing.Point(6, 15);
             this.LblDesc.Name = "LblDesc";
-            this.LblDesc.Size = new System.Drawing.Size(315, 96);
+            this.LblDesc.Size = new System.Drawing.Size(320, 101);
             this.LblDesc.TabIndex = 2;
             // 
             // LblSavingsNum
             // 
             this.LblSavingsNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblSavingsNum.Location = new System.Drawing.Point(195, 171);
+            this.LblSavingsNum.Location = new System.Drawing.Point(214, 170);
             this.LblSavingsNum.Name = "LblSavingsNum";
             this.LblSavingsNum.Size = new System.Drawing.Size(144, 13);
             this.LblSavingsNum.TabIndex = 5;
@@ -179,20 +180,20 @@
             // 
             this.LblSavings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.LblSavings.AutoSize = true;
-            this.LblSavings.Location = new System.Drawing.Point(8, 171);
+            this.LblSavings.Location = new System.Drawing.Point(19, 171);
             this.LblSavings.Name = "LblSavings";
-            this.LblSavings.Size = new System.Drawing.Size(181, 13);
+            this.LblSavings.Size = new System.Drawing.Size(142, 12);
             this.LblSavings.TabIndex = 4;
-            this.LblSavings.Text = "Total amount of disk space you gain:";
+            this.LblSavings.Text = "増加するディスク領域の合計:";
             // 
             // LblFiles
             // 
             this.LblFiles.AutoSize = true;
-            this.LblFiles.Location = new System.Drawing.Point(8, 50);
+            this.LblFiles.Location = new System.Drawing.Point(19, 50);
             this.LblFiles.Name = "LblFiles";
-            this.LblFiles.Size = new System.Drawing.Size(75, 13);
+            this.LblFiles.Size = new System.Drawing.Size(99, 12);
             this.LblFiles.TabIndex = 3;
-            this.LblFiles.Text = "&Files to delete:";
+            this.LblFiles.Text = "削除するファイル(&F):";
             // 
             // LblIntro
             // 
@@ -200,15 +201,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblIntro.Location = new System.Drawing.Point(50, 11);
             this.LblIntro.Name = "LblIntro";
-            this.LblIntro.Size = new System.Drawing.Size(267, 39);
+            this.LblIntro.Size = new System.Drawing.Size(308, 39);
             this.LblIntro.TabIndex = 2;
-            this.LblIntro.Text = "You can use Disk Cleanup to free up to {0} of disk space on {1}.";
+            this.LblIntro.Text = "ディスク クリーンアップを実行すると {1} の空き領域が {0} 増加します。";
             // 
             // BtnOk
             // 
             this.BtnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnOk.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.BtnOk.Location = new System.Drawing.Point(211, 392);
+            this.BtnOk.Location = new System.Drawing.Point(243, 392);
             this.BtnOk.Name = "BtnOk";
             this.BtnOk.Size = new System.Drawing.Size(75, 23);
             this.BtnOk.TabIndex = 1;
@@ -221,11 +222,11 @@
             this.BtnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.BtnCancel.Location = new System.Drawing.Point(292, 392);
+            this.BtnCancel.Location = new System.Drawing.Point(324, 392);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(75, 23);
             this.BtnCancel.TabIndex = 2;
-            this.BtnCancel.Text = "Cancel";
+            this.BtnCancel.Text = "キャンセル";
             this.BtnCancel.UseVisualStyleBackColor = true;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
@@ -235,14 +236,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.BtnCancel;
-            this.ClientSize = new System.Drawing.Size(373, 422);
+            this.ClientSize = new System.Drawing.Size(405, 422);
             this.Controls.Add(this.BtnOk);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.TclMain);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "HandlerChoice";
-            this.Text = "Managed Disk Cleanup for ";
+            this.Text = "Managed Disk Cleanup -";
             this.Load += new System.EventHandler(this.HandlerChoice_Load);
             this.TclMain.ResumeLayout(false);
             this.TpgHandlers.ResumeLayout(false);

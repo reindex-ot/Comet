@@ -42,19 +42,18 @@
             // 
             this.LblIntro.Location = new System.Drawing.Point(47, 11);
             this.LblIntro.Name = "LblIntro";
-            this.LblIntro.Size = new System.Drawing.Size(276, 41);
+            this.LblIntro.Size = new System.Drawing.Size(290, 41);
             this.LblIntro.TabIndex = 0;
-            this.LblIntro.Text = "Disk Cleanup is calculating how much space you will be able to free on {0}. This " +
-    "may take a few minutes to complete.";
+            this.LblIntro.Text = "{0} にどれくらいの空き容量が作成できるかを計算しています。この処理には数分かかることがあります。";
             // 
             // LblCalc
             // 
             this.LblCalc.AutoSize = true;
             this.LblCalc.Location = new System.Drawing.Point(8, 60);
             this.LblCalc.Name = "LblCalc";
-            this.LblCalc.Size = new System.Drawing.Size(68, 13);
+            this.LblCalc.Size = new System.Drawing.Size(47, 12);
             this.LblCalc.TabIndex = 1;
-            this.LblCalc.Text = "Calculating...";
+            this.LblCalc.Text = "計算中...";
             // 
             // PrgScan
             // 
@@ -70,25 +69,25 @@
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(75, 23);
             this.BtnCancel.TabIndex = 3;
-            this.BtnCancel.Text = "Cancel";
+            this.BtnCancel.Text = "キャンセル";
             this.BtnCancel.UseVisualStyleBackColor = true;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // LblScan
             // 
             this.LblScan.AutoSize = true;
-            this.LblScan.Location = new System.Drawing.Point(8, 96);
+            this.LblScan.Location = new System.Drawing.Point(9, 96);
             this.LblScan.Name = "LblScan";
-            this.LblScan.Size = new System.Drawing.Size(55, 13);
+            this.LblScan.Size = new System.Drawing.Size(55, 12);
             this.LblScan.TabIndex = 4;
-            this.LblScan.Text = "Scanning:";
+            this.LblScan.Text = "スキャン中:";
             // 
             // LblHandler
             // 
             this.LblHandler.AutoSize = true;
             this.LblHandler.Location = new System.Drawing.Point(63, 96);
             this.LblHandler.Name = "LblHandler";
-            this.LblHandler.Size = new System.Drawing.Size(0, 13);
+            this.LblHandler.Size = new System.Drawing.Size(0, 12);
             this.LblHandler.TabIndex = 5;
             // 
             // PtbLogo
@@ -103,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(335, 114);
+            this.ClientSize = new System.Drawing.Size(341, 114);
             this.Controls.Add(this.PtbLogo);
             this.Controls.Add(this.LblHandler);
             this.Controls.Add(this.LblScan);

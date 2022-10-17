@@ -40,18 +40,18 @@
             this.LblSelect.AutoSize = true;
             this.LblSelect.Location = new System.Drawing.Point(18, 13);
             this.LblSelect.Name = "LblSelect";
-            this.LblSelect.Size = new System.Drawing.Size(186, 13);
+            this.LblSelect.Size = new System.Drawing.Size(219, 12);
             this.LblSelect.TabIndex = 3;
-            this.LblSelect.Text = "Select the drive you want to clean up.";
+            this.LblSelect.Text = "クリーンアップをするドライブを選択してください。";
             // 
             // LblDrives
             // 
             this.LblDrives.AutoSize = true;
             this.LblDrives.Location = new System.Drawing.Point(18, 34);
             this.LblDrives.Name = "LblDrives";
-            this.LblDrives.Size = new System.Drawing.Size(40, 13);
+            this.LblDrives.Size = new System.Drawing.Size(58, 12);
             this.LblDrives.TabIndex = 4;
-            this.LblDrives.Text = "&Drives:";
+            this.LblDrives.Text = "ドライブ(&D):";
             // 
             // CbbDrives
             // 
@@ -62,7 +62,7 @@
             this.CbbDrives.FormattingEnabled = true;
             this.CbbDrives.Location = new System.Drawing.Point(20, 52);
             this.CbbDrives.Name = "CbbDrives";
-            this.CbbDrives.Size = new System.Drawing.Size(261, 21);
+            this.CbbDrives.Size = new System.Drawing.Size(261, 20);
             this.CbbDrives.TabIndex = 0;
             // 
             // BtnOk
@@ -86,7 +86,7 @@
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Size = new System.Drawing.Size(75, 23);
             this.BtnExit.TabIndex = 2;
-            this.BtnExit.Text = "E&xit";
+            this.BtnExit.Text = "終了(&X)";
             this.BtnExit.UseVisualStyleBackColor = true;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
@@ -107,7 +107,7 @@
             this.MinimizeBox = false;
             this.Name = "DriveSelection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Managed Disk Cleanup : Drive Selection";
+            this.Text = "Managed Disk Cleanup : ドライブの選択";
             this.ResumeLayout(false);
             this.PerformLayout();
 
