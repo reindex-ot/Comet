@@ -22,5 +22,10 @@ Windows 8では、C# で動作をさせる為に必要不可欠な、「Data Dri
  - 使用しているシステム言語
  - 管理者権限でプログラムを実行したかどうか
 
-## Suggesting features / providing feedback
-In case you'd like to share a suggestion, reaching out to me on [Twitter](https://twitter.com/thebookisclosed) would be the best.
+## 機能の提案やフィードバックの提供について
+提案をしたい事がある場合は[Twitter](https://twitter.com/thebookisclosed) から連絡して頂くのが早く反応できるのでオススメです。
+
+## 日本語版を作成した経緯
+Windows 11 22H2からディスククリーンアップの項目が消え、「ストレージセンサーを使う事を推奨するようになった」事が経緯となります。現状でもディスククリーンアップを開く事はできますが、開くのが面倒になった事や、後に完全廃止という事も危惧をして日本語化を行なった物を公開しました。
+
+...READMEは自分なりにかみ砕いて日本語訳したんで自信全くありません。読む奴いないだろうけども。
