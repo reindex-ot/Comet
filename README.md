@@ -6,21 +6,21 @@ Managed Disk Cleanup はEmptyVolumeCache API の内部動作について学ぶ�
 
 このプロジェクトを始めた動機の1つは、コマンドライン引数でディスククリーンアップを使用しないで、クリーンアップを行いたい物を正確にクリーンアップするスクリプトまたはプログラムの作成の可能性が開けた事です。
 
-将来のリリースのための目標:
+今後のリリースの目標:
 
-  - Introduce Restore Point cleanup (Disk Cleanup offers this in its second tab in Administrator mode)
-  - Command line-only mode -- intended for better automation, with granular progress reporting
-  - An improved system for remembering which categories you've selected (currently mimics Disk Cleanup)
-  - Create a repository with a ready-made example for utilizing the API outside of a GUI
+  - 復元ポイントのクリーンアップの追加 (管理者権限実行時に2番目のタブで表示)
+  - コマンドラインモード -- 自動化、詳細な進捗状況の表示を目標としている為
+  - 選択されたカテゴリーを記憶するシステムの改善 (現在はディスククリーンアップを模倣)
+  - GUI の外側でAPI を利用する為のサンプルを含むリポジトリの作成
 
-## Incompatibilities
-Windows 8 introduced changes to the "Data Driven Cleaner" object that are essential for it to work under C#. This is a generic cleanup handler utilized by a handful of the offered cleanup categories. As a result, users using Windows 7 or an earlier OS will be met with a message informing them of limited functionality at startup.
+## 非互換性について
+Windows 8では、C# で動作をさせる為に必要不可欠な、「Data Driven Cleaner オブジェクト」の変更が導入されました。提供されているいくつかのクリーンアップカテゴリーで使用されるハンドラなのですが、Windows 7以前のOS を使用している場合には起動時に機能が制限をされるメッセージを表示します。
 
-## Reporting errors or bugs
-If you happen to run into any of these, filing an issue here will be the most helpful. Besides describing the problem itself, please also include:
- - Your system version (ideally the build number from winver)
- - Your current system locale
- - Whether you were running the program as Administrator
+## エラーやバグの報告(本家側に英語でメッセージしてください)
+問題を発見した場合は、GitHubで問題の報告を行なう事が最も役に立つでしょう。問題の報告の他に以下の情報もお願いします:
+ - 使用しているシステムのバージョン (winver 上にあるビルド番号が理想的です)
+ - 使用しているシステム言語
+ - 管理者権限でプログラムを実行したかどうか
 
 ## Suggesting features / providing feedback
 In case you'd like to share a suggestion, reaching out to me on [Twitter](https://twitter.com/thebookisclosed) would be the best.
